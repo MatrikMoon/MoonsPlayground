@@ -1,4 +1,5 @@
 ﻿using BS_Utils.Utilities;
+using MoonsPlayground.Misc;
 
 namespace MoonsPlayground
 {
@@ -18,12 +19,12 @@ namespace MoonsPlayground
             }
         }
 
-        public bool Fuckery
+        public bool WTFOnMiss
         {
-            get => Config.GetBool(MainSection, nameof(Fuckery), false);
+            get => Config.GetBool(MainSection, nameof(WTFOnMiss), true);
             set
             {
-                Config.SetBool(MainSection, nameof(Fuckery), value);
+                Config.SetBool(MainSection, nameof(WTFOnMiss), value);
             }
         }
     }

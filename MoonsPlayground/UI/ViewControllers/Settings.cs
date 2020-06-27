@@ -1,7 +1,4 @@
 ﻿using BeatSaberMarkupLanguage.Attributes;
-using BeatSaberMarkupLanguage.Components;
-using BeatSaberMarkupLanguage.Parser;
-using BS_Utils.Utilities;
 
 namespace MoonsPlayground.UI.ViewControllers
 {
@@ -14,8 +11,15 @@ namespace MoonsPlayground.UI.ViewControllers
         [UIValue("force-one-color")]
         public bool ForceOneColor { get; set; }
 
-        [UIValue("fuckery")]
-        public bool Fuckery { get; set; }
+        [UIValue("wtf-on-miss")]
+        public bool WTFOnMiss { get; set; }
+
+        [UIAction("#apply")]
+        private void Apply()
+        {
+            SettingsManager.ForceOneColor = ForceOneColor;
+            SettingsManager.WTFOnMiss = WTFOnMiss;
+        }
 
         [UIAction("#cancel")]
         private void Cancel() => LoadSettings();
@@ -25,7 +29,7 @@ namespace MoonsPlayground.UI.ViewControllers
         private void LoadSettings()
         {
             ForceOneColor = SettingsManager.ForceOneColor;
-            Fuckery = SettingsManager.Fuckery;
+            WTFOnMiss = SettingsManager.WTFOnMiss;
         }
     }
 }

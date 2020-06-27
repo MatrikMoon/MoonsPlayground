@@ -98,20 +98,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behaviours\BeatmapModifier.cs" />
+    <Compile Include="PlaygroundModules\Behaviours\RunProgramOnMiss.cs" />
+    <Compile Include="PlaygroundModules\Behaviours\BeatmapModifier.cs" />
+    <Compile Include="PlaygroundModules\HealthAndSafetyHijack.cs" />
     <Compile Include="SettingsManager.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\Extensions.cs" />
     <Compile Include="Utilities\ReflectionUtil.cs" />
     <Compile Include="Misc\SharedConstructs.cs" />
     <Compile Include="UI\ViewControllers\Settings.cs" />
+    <Compile Include="Utilities\WindowsUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="manifest.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="UI\Views\Settings.bsml" />
+    <EmbeddedResource Include="UI\Views\Settings.bsml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

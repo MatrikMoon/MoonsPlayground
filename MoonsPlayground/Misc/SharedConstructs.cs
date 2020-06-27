@@ -1,4 +1,4 @@
-﻿namespace MoonsPlayground
+﻿namespace MoonsPlayground.Misc
 {
     class SharedConstructs
     {
