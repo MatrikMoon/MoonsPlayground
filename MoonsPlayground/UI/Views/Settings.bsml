@@ -1,0 +1,4 @@
+﻿<settings-container child-control-height='false' child-expand-height="false">
+  <checkbox-setting text='Enable Playground' value='is-enabled'/>
+  <checkbox-setting text='Force One Saber' value='is-enabled'/>
+</settings-container>

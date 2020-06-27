@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nike4613/ModSaber-MetadataFileSchema/master/Schema.json",
+  "author": "Moon",
+  "description": "Testing Playground",
+  "gameVersion": "1.10.0",
+  "id": "MoonsPlayground",
+  "name": "MoonsPlayground",
+  "version": "0.0.0",
+  "features": []
+}
